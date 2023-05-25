@@ -95,7 +95,7 @@ namespace CalorieCalculator
                     foreach (Ingredient ingredient in Ingredients)
                     {
                         double roundedCalories = Math.Round(ingredient.CaloriesPer100g, 2);
-                        writer.WriteLine($"{ingredient.Name}, Weight(g){ingredient.Weight}, Calories (per 100g): {roundedCalories}");
+                        writer.WriteLine($"{ingredient.Name}, Weight(g): {ingredient.Weight}, Calories (per 100g): {roundedCalories}");
                     }
                     writer.WriteLine();
                     writer.WriteLine($"Total Weight: {TotalWeight}");
